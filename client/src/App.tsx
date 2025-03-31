@@ -46,7 +46,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <FileText className="h-8 w-8 text-blue-600" />
-              <h1 className="ml-2 text-2xl font-bold text-gray-900">AI Resume Builder</h1>
+              <h1 className="ml-2 text-2xl font-bold text-gray-900"> CraftIQ - You own resume </h1>
             </div>
             <button 
               onClick={handleExportPDF}
