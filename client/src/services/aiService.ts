@@ -1,4 +1,4 @@
-const API_URL = "https://deepseek-backend.onrender.com/chat"; // 🔗 твой backend
+const API_URL = "https://pythonapirepo.onrender.com/chat"; // 🔗 твой backend
 
 export const enhanceText = async (text: string): Promise<string> => {
   if (!text.trim()) return text;
