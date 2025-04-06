@@ -209,11 +209,12 @@ const ResumeForm: React.FC<ResumeFormProps> = ({ data, onChange }) => {
             </>
           )}
         </button>
-        <p className="text-sm text-gray-500 mt-2">
-  Note: AI enhancement might take 1-2 minutes.
-         </p>
+        
       </div>
 
+                <p className="mt-1 text-xs text-gray-500">
+                  Recommended: Square image, max 5MB
+                </p>
       {enhanceError && (
         <div className="p-3 bg-red-100 text-red-700 rounded-md text-sm">
           {enhanceError}
