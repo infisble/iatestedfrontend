@@ -205,16 +205,14 @@ const ResumeForm: React.FC<ResumeFormProps> = ({ data, onChange }) => {
           ) : (
             <>
               <Wand2 className="h-4 w-4 mr-2" />
-              AI Enhance Summary
+              AI Enhance Summary(1-2 min)
             </>
           )}
         </button>
         
       </div>
 
-                <p className="mt-1 text-xs text-gray-500">
-                  Recommended: Square image, max 10MB
-                </p>
+               
       {enhanceError && (
         <div className="p-3 bg-red-100 text-red-700 rounded-md text-sm">
           {enhanceError}
