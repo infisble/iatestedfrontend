@@ -209,6 +209,9 @@ const ResumeForm: React.FC<ResumeFormProps> = ({ data, onChange }) => {
             </>
           )}
         </button>
+        <p className="text-sm text-gray-500 mt-2">
+  Note: AI enhancement might take 1-2 minutes.
+         </p>
       </div>
 
       {enhanceError && (
