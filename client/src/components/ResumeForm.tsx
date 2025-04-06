@@ -188,32 +188,33 @@ const ResumeForm: React.FC<ResumeFormProps> = ({ data, onChange }) => {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold text-gray-900">Personal Information</h2>
-      <button 
-  onClick={handleEnhanceSummary}
-  disabled={isEnhancing}
-  className={`inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md ${
-    isEnhancing 
-      ? 'bg-blue-100 text-blue-400 cursor-not-allowed' 
-      : 'text-blue-600 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
-  }`}
->
-  {isEnhancing ? (
-    <>
-      <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-      Enhancing...
-    </>
-  ) : (
-    <>
-      <Wand2 className="h-4 w-4 mr-2" />
-      AI Enhance Summary
-    </>
-  )}
-</button>
+        <button 
+          onClick={handleEnhanceSummary}
+          disabled={isEnhancing}
+          className={`inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md ${
+            isEnhancing 
+              ? 'bg-blue-100 text-blue-400 cursor-not-allowed' 
+              : 'text-blue-600 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+          }`}
+        >
+          {isEnhancing ? (
+            <>
+              <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+              Enhancing...
+            </>
+          ) : (
+            <>
+              <Wand2 className="h-4 w-4 mr-2" />
+              AI Enhance Summary
+            </>
+          )}
+        </button>
+        
+      </div>
 
-<p className="mt-1 text-xs text-gray-500">
-  Recommended: Square image, max 10MB
-</p>
-
+                <p className="mt-1 text-xs text-gray-500">
+                  Recommended: Square image, max 10MB
+                </p>
       {enhanceError && (
         <div className="p-3 bg-red-100 text-red-700 rounded-md text-sm">
           {enhanceError}
