@@ -213,7 +213,7 @@ const ResumeForm: React.FC<ResumeFormProps> = ({ data, onChange }) => {
       </div>
 
                 <p className="mt-1 text-xs text-gray-500">
-                  Recommended: Square image, max 5MB
+                  Recommended: Square image, max 10MB
                 </p>
       {enhanceError && (
         <div className="p-3 bg-red-100 text-red-700 rounded-md text-sm">
